@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gif_view/gif_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -112,6 +113,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            GifView.asset(
+              'site.gif',
+              height: 240,
+              width: 240,
+              frameRate: 30,
+            )
           ],
         ),
       ),
